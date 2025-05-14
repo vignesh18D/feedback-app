@@ -7,7 +7,7 @@ function App() {
   const [feedbacks, setFeedbacks] = useState([]);
 
   const fetchFeedbacks = async () => {
-    const res = await fetch('http://localhost:5000/api/feedback');
+    const res = await fetch('https://feedback-app-gbwf.onrender.com/api/feedback');
     const data = await res.json();
     setFeedbacks(data);
   };
